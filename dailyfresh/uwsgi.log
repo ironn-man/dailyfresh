@@ -1,0 +1,743 @@
+*** Starting uWSGI 2.0.18 (64bit) on [Wed Aug  7 14:48:17 2019] ***
+compiled with version: 5.4.0 20160609 on 07 August 2019 06:08:08
+os: Linux-4.4.0-96-generic #119-Ubuntu SMP Tue Sep 12 14:59:54 UTC 2017
+nodename: tedu
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 2
+current working directory: /home/tarena/dailyfresh
+writing pidfile to uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/tarena/dailyfresh
+your processes number limit is 15576
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on 127.0.0.1:8080 fd 4
+uwsgi socket 0 bound to TCP address 127.0.0.1:33583 (port auto-assigned) fd 3
+Python version: 3.5.2 (default, Nov 12 2018, 13:43:14)  [GCC 5.4.0 20160609]
+Python main interpreter initialized at 0x2116710
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416880 bytes (407 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x2116710 pid: 5426 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 5426)
+spawned uWSGI worker 1 (pid: 5428, cores: 2)
+spawned uWSGI worker 2 (pid: 5429, cores: 2)
+spawned uWSGI worker 3 (pid: 5431, cores: 2)
+spawned uWSGI worker 4 (pid: 5432, cores: 2)
+spawned uWSGI http 1 (pid: 5434)
+[pid: 5432|app: 0|req: 1/1] 127.0.0.1 () {38 vars in 800 bytes} [Wed Aug  7 14:49:23 2019] GET /index => generated 0 bytes in 457 msecs (HTTP/1.1 301) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 5432|app: 0|req: 2/2] 127.0.0.1 () {38 vars in 802 bytes} [Wed Aug  7 14:49:23 2019] GET /index/ => generated 2998 bytes in 130 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 1)
+Not Found: /static/js/slide.js
+Not Found: /static/js/jquery-1.12.4.min.js
+[pid: 5432|app: 0|req: 4/3] 127.0.0.1 () {38 vars in 720 bytes} [Wed Aug  7 14:49:24 2019] GET /static/js/slide.js => generated 3000 bytes in 31 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+[pid: 5432|app: 0|req: 4/4] 127.0.0.1 () {38 vars in 744 bytes} [Wed Aug  7 14:49:24 2019] GET /static/js/jquery-1.12.4.min.js => generated 3036 bytes in 50 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/js/jquery-ui.min.js
+Not Found: /static/css/reset.css
+[pid: 5428|app: 0|req: 2/5] 127.0.0.1 () {38 vars in 736 bytes} [Wed Aug  7 14:49:24 2019] GET /static/js/jquery-ui.min.js => generated 3024 bytes in 471 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+[pid: 5428|app: 0|req: 2/6] 127.0.0.1 () {38 vars in 739 bytes} [Wed Aug  7 14:49:24 2019] GET /static/css/reset.css => generated 3006 bytes in 506 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/images/logo.png
+[pid: 5429|app: 0|req: 2/7] 127.0.0.1 () {38 vars in 764 bytes} [Wed Aug  7 14:49:24 2019] GET /static/images/logo.png => generated 3012 bytes in 506 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+Not Found: /static/css/main.css
+[pid: 5429|app: 0|req: 2/8] 127.0.0.1 () {38 vars in 737 bytes} [Wed Aug  7 14:49:24 2019] GET /static/css/main.css => generated 3003 bytes in 551 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/js/jquery-ui.min.js
+[pid: 5431|app: 0|req: 1/9] 127.0.0.1 () {38 vars in 736 bytes} [Wed Aug  7 14:49:24 2019] GET /static/js/jquery-ui.min.js => generated 3024 bytes in 428 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/js/slide.js
+[pid: 5428|app: 0|req: 3/10] 127.0.0.1 () {38 vars in 720 bytes} [Wed Aug  7 14:49:25 2019] GET /static/js/slide.js => generated 3000 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+Not Found: /favicon.ico
+[pid: 5432|app: 0|req: 5/11] 127.0.0.1 () {38 vars in 742 bytes} [Wed Aug  7 14:49:25 2019] GET /favicon.ico => generated 2979 bytes in 7 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+SIGINT/SIGQUIT received...killing workers...
+gateway "uWSGI http 1" has been buried (pid: 5434)
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.18 (64bit) on [Wed Aug  7 15:19:02 2019] ***
+compiled with version: 5.4.0 20160609 on 07 August 2019 06:08:08
+os: Linux-4.4.0-96-generic #119-Ubuntu SMP Tue Sep 12 14:59:54 UTC 2017
+nodename: tedu
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 2
+current working directory: /home/tarena/dailyfresh
+writing pidfile to uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/tarena/dailyfresh
+your processes number limit is 15576
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on 127.0.0.1:8080 fd 4
+uwsgi socket 0 bound to TCP address 127.0.0.1:43852 (port auto-assigned) fd 3
+Python version: 3.5.2 (default, Nov 12 2018, 13:43:14)  [GCC 5.4.0 20160609]
+Python main interpreter initialized at 0xd62710
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416880 bytes (407 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0xd62710 pid: 6466 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 6466)
+spawned uWSGI worker 1 (pid: 6468, cores: 2)
+spawned uWSGI worker 2 (pid: 6469, cores: 2)
+spawned uWSGI worker 3 (pid: 6470, cores: 2)
+spawned uWSGI worker 4 (pid: 6472, cores: 2)
+spawned uWSGI http 1 (pid: 6473)
+SIGINT/SIGQUIT received...killing workers...
+gateway "uWSGI http 1" has been buried (pid: 6473)
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.18 (64bit) on [Wed Aug  7 15:22:20 2019] ***
+compiled with version: 5.4.0 20160609 on 07 August 2019 06:08:08
+os: Linux-4.4.0-96-generic #119-Ubuntu SMP Tue Sep 12 14:59:54 UTC 2017
+nodename: tedu
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 2
+current working directory: /home/tarena/dailyfresh
+writing pidfile to uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/tarena/dailyfresh
+your processes number limit is 15576
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8080 fd 3
+Python version: 3.5.2 (default, Nov 12 2018, 13:43:14)  [GCC 5.4.0 20160609]
+Python main interpreter initialized at 0x1af0630
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416880 bytes (407 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x1af0630 pid: 6506 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 6506)
+spawned uWSGI worker 1 (pid: 6508, cores: 2)
+spawned uWSGI worker 2 (pid: 6509, cores: 2)
+spawned uWSGI worker 3 (pid: 6510, cores: 2)
+spawned uWSGI worker 4 (pid: 6512, cores: 2)
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.18 (64bit) on [Wed Aug  7 15:24:09 2019] ***
+compiled with version: 5.4.0 20160609 on 07 August 2019 06:08:08
+os: Linux-4.4.0-96-generic #119-Ubuntu SMP Tue Sep 12 14:59:54 UTC 2017
+nodename: tedu
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 2
+current working directory: /home/tarena/dailyfresh
+writing pidfile to uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/tarena/dailyfresh
+your processes number limit is 15576
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8000 fd 3
+Python version: 3.5.2 (default, Nov 12 2018, 13:43:14)  [GCC 5.4.0 20160609]
+Python main interpreter initialized at 0x1c69630
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416880 bytes (407 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x1c69630 pid: 6616 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 6616)
+spawned uWSGI worker 1 (pid: 6618, cores: 2)
+spawned uWSGI worker 2 (pid: 6619, cores: 2)
+spawned uWSGI worker 3 (pid: 6620, cores: 2)
+spawned uWSGI worker 4 (pid: 6621, cores: 2)
+[pid: 6621|app: 0|req: 1/1] 127.0.0.1 () {44 vars in 872 bytes} [Wed Aug  7 15:24:12 2019] GET /index => generated 0 bytes in 327 msecs (HTTP/1.1 301) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 6620|app: 0|req: 1/2] 127.0.0.1 () {44 vars in 874 bytes} [Wed Aug  7 15:24:12 2019] GET /index/ => generated 2998 bytes in 418 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 0)
+Not Found: /static/js/slide.js
+[pid: 6620|app: 0|req: 2/3] 127.0.0.1 () {42 vars in 756 bytes} [Wed Aug  7 15:24:13 2019] GET /static/js/slide.js => generated 2995 bytes in 10 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+Not Found: /static/js/jquery-ui.min.js
+[pid: 6621|app: 0|req: 2/4] 127.0.0.1 () {42 vars in 772 bytes} [Wed Aug  7 15:24:13 2019] GET /static/js/jquery-ui.min.js => generated 3019 bytes in 29 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+Not Found: /static/js/jquery-1.12.4.min.js
+[pid: 6619|app: 0|req: 2/5] 127.0.0.1 () {42 vars in 780 bytes} [Wed Aug  7 15:24:13 2019] GET /static/js/jquery-1.12.4.min.js => generated 3031 bytes in 387 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+Not Found: /static/css/reset.css
+[pid: 6619|app: 0|req: 2/6] 127.0.0.1 () {42 vars in 775 bytes} [Wed Aug  7 15:24:13 2019] GET /static/css/reset.css => generated 3001 bytes in 401 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/images/logo.png
+Not Found: /static/css/main.css
+[pid: 6618|app: 0|req: 2/7] 127.0.0.1 () {42 vars in 800 bytes} [Wed Aug  7 15:24:13 2019] GET /static/images/logo.png => generated 3007 bytes in 399 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+[pid: 6618|app: 0|req: 2/8] 127.0.0.1 () {42 vars in 773 bytes} [Wed Aug  7 15:24:13 2019] GET /static/css/main.css => generated 2998 bytes in 403 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/js/jquery-ui.min.js
+[pid: 6621|app: 0|req: 3/9] 127.0.0.1 () {42 vars in 772 bytes} [Wed Aug  7 15:24:13 2019] GET /static/js/jquery-ui.min.js => generated 3019 bytes in 8 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/js/slide.js
+[pid: 6620|app: 0|req: 3/10] 127.0.0.1 () {42 vars in 756 bytes} [Wed Aug  7 15:24:13 2019] GET /static/js/slide.js => generated 2995 bytes in 10 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 6619|app: 0|req: 3/11] 127.0.0.1 () {42 vars in 778 bytes} [Wed Aug  7 15:24:13 2019] GET /favicon.ico => generated 2974 bytes in 6 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.18 (64bit) on [Wed Aug  7 15:57:31 2019] ***
+compiled with version: 5.4.0 20160609 on 07 August 2019 06:08:08
+os: Linux-4.4.0-96-generic #119-Ubuntu SMP Tue Sep 12 14:59:54 UTC 2017
+nodename: tedu
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 2
+current working directory: /home/tarena/dailyfresh
+writing pidfile to uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/tarena/dailyfresh
+your processes number limit is 15576
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8000 fd 3
+Python version: 3.5.2 (default, Nov 12 2018, 13:43:14)  [GCC 5.4.0 20160609]
+Python main interpreter initialized at 0xce6630
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416880 bytes (407 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0xce6630 pid: 7196 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 7196)
+spawned uWSGI worker 1 (pid: 7198, cores: 2)
+spawned uWSGI worker 2 (pid: 7199, cores: 2)
+spawned uWSGI worker 3 (pid: 7200, cores: 2)
+spawned uWSGI worker 4 (pid: 7202, cores: 2)
+[pid: 7200|app: 0|req: 1/1] 127.0.0.1 () {44 vars in 874 bytes} [Wed Aug  7 15:57:40 2019] GET /index/ => generated 2998 bytes in 460 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 0)
+Not Found: /
+[pid: 7198|app: 0|req: 1/2] 127.0.0.1 () {42 vars in 831 bytes} [Wed Aug  7 16:28:33 2019] GET / => generated 2923 bytes in 444 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /
+[pid: 7200|app: 0|req: 2/3] 127.0.0.1 () {44 vars in 862 bytes} [Wed Aug  7 16:28:38 2019] GET / => generated 2923 bytes in 13 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+[pid: 7202|app: 0|req: 1/4] 127.0.0.1 () {42 vars in 843 bytes} [Wed Aug  7 16:28:50 2019] GET /index/ => generated 2998 bytes in 509 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 0)
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.18 (64bit) on [Wed Aug  7 17:12:53 2019] ***
+compiled with version: 5.4.0 20160609 on 07 August 2019 06:08:08
+os: Linux-4.4.0-96-generic #119-Ubuntu SMP Tue Sep 12 14:59:54 UTC 2017
+nodename: tedu
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 2
+current working directory: /home/tarena/dailyfresh
+writing pidfile to uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/tarena/dailyfresh
+your processes number limit is 15576
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8000 fd 3
+Python version: 3.5.2 (default, Nov 12 2018, 13:43:14)  [GCC 5.4.0 20160609]
+Python main interpreter initialized at 0x25fd630
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416880 bytes (407 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x25fd630 pid: 7574 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 7574)
+spawned uWSGI worker 1 (pid: 7576, cores: 2)
+spawned uWSGI worker 2 (pid: 7577, cores: 2)
+spawned uWSGI worker 3 (pid: 7578, cores: 2)
+spawned uWSGI worker 4 (pid: 7580, cores: 2)
+[pid: 7580|app: 0|req: 1/1] 127.0.0.1 () {44 vars in 874 bytes} [Wed Aug  7 17:12:58 2019] GET /index/ => generated 2998 bytes in 473 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: '176.215.11.36'. You may need to add '176.215.11.36' to ALLOWED_HOSTS.
+Bad Request: /index
+[pid: 7576|app: 0|req: 1/2] 176.215.11.27 () {40 vars in 698 bytes} [Wed Aug  7 17:14:26 2019] GET /index => generated 56984 bytes in 139 msecs (HTTP/1.1 400) 1 headers in 53 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: '176.215.11.36'. You may need to add '176.215.11.36' to ALLOWED_HOSTS.
+Bad Request: /favicon.ico
+[pid: 7580|app: 0|req: 2/3] 176.215.11.27 () {40 vars in 638 bytes} [Wed Aug  7 17:14:26 2019] GET /favicon.ico => generated 56984 bytes in 77 msecs (HTTP/1.1 400) 1 headers in 53 bytes (1 switches on core 1)
+Invalid HTTP_HOST header: '176.215.11.36'. You may need to add '176.215.11.36' to ALLOWED_HOSTS.
+Bad Request: /index
+[pid: 7577|app: 0|req: 1/4] 176.215.11.27 () {42 vars in 729 bytes} [Wed Aug  7 17:14:35 2019] GET /index => generated 57119 bytes in 152 msecs (HTTP/1.1 400) 1 headers in 53 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: '176.215.11.36'. You may need to add '176.215.11.36' to ALLOWED_HOSTS.
+Bad Request: /favicon.ico
+[pid: 7577|app: 0|req: 2/5] 176.215.11.27 () {40 vars in 638 bytes} [Wed Aug  7 17:14:35 2019] GET /favicon.ico => generated 56984 bytes in 45 msecs (HTTP/1.1 400) 1 headers in 53 bytes (1 switches on core 1)
+[pid: 7576|app: 0|req: 2/6] 127.0.0.1 () {44 vars in 874 bytes} [Wed Aug  7 17:17:35 2019] GET /index/ => generated 2998 bytes in 384 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 1)
+Invalid HTTP_HOST header: '176.215.11.36'. You may need to add '176.215.11.36' to ALLOWED_HOSTS.
+Bad Request: /index
+[pid: 7580|app: 0|req: 3/7] 176.215.11.27 () {40 vars in 698 bytes} [Wed Aug  7 17:18:08 2019] GET /index => generated 56984 bytes in 63 msecs (HTTP/1.1 400) 1 headers in 53 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: '176.215.11.36'. You may need to add '176.215.11.36' to ALLOWED_HOSTS.
+Bad Request: /favicon.ico
+[pid: 7577|app: 0|req: 3/8] 176.215.11.27 () {40 vars in 638 bytes} [Wed Aug  7 17:18:09 2019] GET /favicon.ico => generated 56984 bytes in 51 msecs (HTTP/1.1 400) 1 headers in 53 bytes (1 switches on core 0)
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.18 (64bit) on [Wed Aug  7 17:20:25 2019] ***
+compiled with version: 5.4.0 20160609 on 07 August 2019 06:08:08
+os: Linux-4.4.0-96-generic #119-Ubuntu SMP Tue Sep 12 14:59:54 UTC 2017
+nodename: tedu
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 2
+current working directory: /home/tarena/dailyfresh
+writing pidfile to uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/tarena/dailyfresh
+your processes number limit is 15576
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8000 fd 3
+Python version: 3.5.2 (default, Nov 12 2018, 13:43:14)  [GCC 5.4.0 20160609]
+Python main interpreter initialized at 0xc4c630
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416880 bytes (407 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0xc4c630 pid: 7735 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 7735)
+spawned uWSGI worker 1 (pid: 7737, cores: 2)
+spawned uWSGI worker 2 (pid: 7738, cores: 2)
+spawned uWSGI worker 3 (pid: 7740, cores: 2)
+spawned uWSGI worker 4 (pid: 7741, cores: 2)
+[pid: 7738|app: 0|req: 1/1] 127.0.0.1 () {42 vars in 843 bytes} [Wed Aug  7 17:20:34 2019] GET /index/ => generated 2998 bytes in 432 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 0)
+[pid: 7737|app: 0|req: 1/2] 176.215.11.27 () {42 vars in 729 bytes} [Wed Aug  7 17:20:51 2019] GET /index => generated 0 bytes in 303 msecs (HTTP/1.1 301) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 7737|app: 0|req: 2/3] 176.215.11.27 () {42 vars in 731 bytes} [Wed Aug  7 17:20:51 2019] GET /index/ => generated 2968 bytes in 44 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 1)
+[pid: 7740|app: 0|req: 1/4] 176.215.11.27 () {40 vars in 639 bytes} [Wed Aug  7 17:20:51 2019] GET /favicon.ico => generated 77 bytes in 275 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 7741|app: 0|req: 1/5] 176.215.11.16 () {40 vars in 692 bytes} [Wed Aug  7 17:21:29 2019] GET /index => generated 0 bytes in 324 msecs (HTTP/1.1 301) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 7737|app: 0|req: 3/6] 176.215.11.16 () {40 vars in 694 bytes} [Wed Aug  7 17:21:29 2019] GET /index/ => generated 2968 bytes in 3 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 0)
+[pid: 7737|app: 0|req: 4/7] 176.215.11.16 () {40 vars in 633 bytes} [Wed Aug  7 17:21:29 2019] GET /favicon.ico => generated 77 bytes in 10 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 7738|app: 0|req: 2/8] 176.215.11.16 () {42 vars in 753 bytes} [Wed Aug  7 17:21:53 2019] GET /user/register/ => generated 3314 bytes in 21 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 1)
+[pid: 7741|app: 0|req: 2/9] 176.215.11.16 () {44 vars in 844 bytes} [Wed Aug  7 17:21:55 2019] GET /user/login/ => generated 2213 bytes in 46 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 1)
+[pid: 7740|app: 0|req: 2/10] 176.215.11.16 () {52 vars in 1024 bytes} [Wed Aug  7 17:22:16 2019] POST /user/login/ => generated 0 bytes in 203 msecs (HTTP/1.1 302) 8 headers in 540 bytes (1 switches on core 0)
+[pid: 7740|app: 0|req: 3/11] 176.215.11.16 () {46 vars in 906 bytes} [Wed Aug  7 17:22:16 2019] GET /index/ => generated 2996 bytes in 17 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 1)
+[pid: 7738|app: 0|req: 3/12] 176.215.11.16 () {44 vars in 868 bytes} [Wed Aug  7 17:22:40 2019] GET /user/ => generated 2959 bytes in 26 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 0)
+[pid: 7737|app: 0|req: 5/13] 176.215.11.16 () {44 vars in 881 bytes} [Wed Aug  7 17:22:43 2019] GET /user/order/1 => generated 4732 bytes in 53 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 0)
+[pid: 7740|app: 0|req: 4/14] 176.215.11.14 () {40 vars in 682 bytes} [Wed Aug  7 17:22:43 2019] GET / => generated 77 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 7737|app: 0|req: 6/15] 176.215.11.14 () {40 vars in 627 bytes} [Wed Aug  7 17:22:43 2019] GET /favicon.ico => generated 77 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 7740|app: 0|req: 5/16] 176.215.11.16 () {44 vars in 890 bytes} [Wed Aug  7 17:22:44 2019] GET /user/address/ => generated 3449 bytes in 36 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 1)
+[pid: 7737|app: 0|req: 7/17] 176.215.11.14 () {40 vars in 692 bytes} [Wed Aug  7 17:23:02 2019] GET /index => generated 0 bytes in 4 msecs (HTTP/1.1 301) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 7740|app: 0|req: 6/18] 176.215.11.14 () {40 vars in 694 bytes} [Wed Aug  7 17:23:02 2019] GET /index/ => generated 2968 bytes in 14 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 0)
+[pid: 7741|app: 0|req: 3/19] 176.215.11.14 () {40 vars in 694 bytes} [Wed Aug  7 17:23:12 2019] GET /index/ => generated 2968 bytes in 16 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 0)
+[pid: 7738|app: 0|req: 4/20] 176.215.11.14 () {42 vars in 735 bytes} [Wed Aug  7 17:23:19 2019] GET /user/ => generated 0 bytes in 23 msecs (HTTP/1.1 302) 5 headers in 159 bytes (1 switches on core 1)
+[pid: 7737|app: 0|req: 8/21] 176.215.11.14 () {42 vars in 768 bytes} [Wed Aug  7 17:23:19 2019] GET /user/login?next=/user/ => generated 0 bytes in 1 msecs (HTTP/1.1 301) 3 headers in 129 bytes (1 switches on core 0)
+[pid: 7740|app: 0|req: 7/22] 176.215.11.14 () {42 vars in 770 bytes} [Wed Aug  7 17:23:19 2019] GET /user/login/?next=/user/ => generated 2213 bytes in 6 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 1)
+[pid: 7741|app: 0|req: 4/23] 176.215.11.14 () {42 vars in 783 bytes} [Wed Aug  7 17:23:21 2019] GET /index/ => generated 2968 bytes in 3 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 1)
+[pid: 7740|app: 0|req: 8/24] 176.215.11.14 () {44 vars in 838 bytes} [Wed Aug  7 17:23:26 2019] GET /user/order/1 => generated 0 bytes in 7 msecs (HTTP/1.1 302) 5 headers in 166 bytes (1 switches on core 0)
+[pid: 7737|app: 0|req: 9/25] 176.215.11.14 () {44 vars in 871 bytes} [Wed Aug  7 17:23:26 2019] GET /user/login?next=/user/order/1 => generated 0 bytes in 1 msecs (HTTP/1.1 301) 3 headers in 136 bytes (1 switches on core 1)
+[pid: 7737|app: 0|req: 10/26] 176.215.11.14 () {44 vars in 873 bytes} [Wed Aug  7 17:23:26 2019] GET /user/login/?next=/user/order/1 => generated 2213 bytes in 4 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 0)
+[pid: 7738|app: 0|req: 5/27] 176.215.11.14 () {44 vars in 836 bytes} [Wed Aug  7 17:23:30 2019] GET /user/login/ => generated 2213 bytes in 8 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 0)
+[pid: 7737|app: 0|req: 11/28] 176.215.11.14 () {44 vars in 847 bytes} [Wed Aug  7 17:23:36 2019] GET /user/register/ => generated 3314 bytes in 16 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 1)
+[pid: 7737|app: 0|req: 12/29] 176.215.11.14 () {52 vars in 1024 bytes} [Wed Aug  7 17:23:48 2019] POST /user/login/ => generated 0 bytes in 161 msecs (HTTP/1.1 302) 8 headers in 540 bytes (1 switches on core 0)
+[pid: 7740|app: 0|req: 9/30] 176.215.11.14 () {46 vars in 906 bytes} [Wed Aug  7 17:23:48 2019] GET /index/ => generated 2996 bytes in 9 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 1)
+[pid: 7740|app: 0|req: 10/31] 176.215.11.14 () {44 vars in 868 bytes} [Wed Aug  7 17:23:50 2019] GET /user/ => generated 2959 bytes in 36 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 0)
+[pid: 7741|app: 0|req: 5/32] 176.215.11.14 () {44 vars in 881 bytes} [Wed Aug  7 17:23:52 2019] GET /user/order/1 => generated 4732 bytes in 33 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 0)
+[pid: 7741|app: 0|req: 6/33] 176.215.11.14 () {44 vars in 888 bytes} [Wed Aug  7 17:23:52 2019] GET /user/order/1 => generated 4732 bytes in 23 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 1)
+[pid: 7738|app: 0|req: 6/34] 176.215.11.14 () {44 vars in 890 bytes} [Wed Aug  7 17:23:53 2019] GET /user/address/ => generated 3449 bytes in 20 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 1)
+[pid: 7738|app: 0|req: 7/35] 176.215.11.14 () {44 vars in 875 bytes} [Wed Aug  7 17:23:55 2019] GET /user/ => generated 2959 bytes in 17 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 0)
+[pid: 7737|app: 0|req: 13/36] 176.215.11.14 () {44 vars in 874 bytes} [Wed Aug  7 17:23:59 2019] GET /user/ => generated 2959 bytes in 21 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 1)
+[pid: 7737|app: 0|req: 14/37] 176.215.11.14 () {44 vars in 869 bytes} [Wed Aug  7 17:24:01 2019] GET /index/ => generated 2996 bytes in 16 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 0)
+[pid: 7738|app: 0|req: 8/38] 176.215.11.14 () {44 vars in 868 bytes} [Wed Aug  7 17:24:03 2019] GET /cart/ => generated 11051 bytes in 23 msecs (HTTP/1.1 200) 5 headers in 293 bytes (1 switches on core 1)
+[pid: 7741|app: 0|req: 7/39] 176.215.11.14 () {44 vars in 870 bytes} [Wed Aug  7 17:24:08 2019] GET /index/ => generated 2996 bytes in 16 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 0)
+[pid: 7740|app: 0|req: 11/40] 176.215.11.14 () {44 vars in 870 bytes} [Wed Aug  7 17:24:09 2019] GET /index/ => generated 2996 bytes in 15 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 1)
+[pid: 7740|app: 0|req: 12/41] 176.215.11.14 () {44 vars in 875 bytes} [Wed Aug  7 17:24:12 2019] GET /search?q= => generated 77 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 7741|app: 0|req: 8/42] 176.215.11.22 () {42 vars in 732 bytes} [Wed Aug  7 17:26:21 2019] GET /index => generated 0 bytes in 1 msecs (HTTP/1.1 301) 3 headers in 112 bytes (1 switches on core 1)
+[pid: 7737|app: 0|req: 16/43] 176.215.11.22 () {42 vars in 732 bytes} [Wed Aug  7 17:26:21 2019] GET /index => generated 0 bytes in 2 msecs (HTTP/1.1 301) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 7737|app: 0|req: 16/44] 176.215.11.22 () {42 vars in 734 bytes} [Wed Aug  7 17:26:21 2019] GET /index/ => generated 2968 bytes in 10 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 1)
+[pid: 7741|app: 0|req: 9/45] 176.215.11.22 () {42 vars in 734 bytes} [Wed Aug  7 17:26:22 2019] GET /index/ => generated 2968 bytes in 8 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 0)
+[pid: 7738|app: 0|req: 9/46] 176.215.11.22 () {40 vars in 642 bytes} [Wed Aug  7 17:26:23 2019] GET /favicon.ico => generated 77 bytes in 11 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.18 (64bit) on [Tue Aug 13 11:04:48 2019] ***
+compiled with version: 5.4.0 20160609 on 07 August 2019 06:08:08
+os: Linux-4.4.0-96-generic #119-Ubuntu SMP Tue Sep 12 14:59:54 UTC 2017
+nodename: tedu
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 2
+current working directory: /home/tarena/dailyfresh
+writing pidfile to uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/tarena/dailyfresh
+your processes number limit is 15576
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8000 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.5.2 (default, Nov 12 2018, 13:43:14)  [GCC 5.4.0 20160609]
+Python main interpreter initialized at 0x14d8810
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416880 bytes (407 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x14d8810 pid: 5620 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 5620)
+spawned uWSGI worker 1 (pid: 5622, cores: 2)
+spawned uWSGI worker 2 (pid: 5623, cores: 2)
+spawned uWSGI worker 3 (pid: 5624, cores: 2)
+spawned uWSGI worker 4 (pid: 5625, cores: 2)
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+[pid: 5624|app: 0|req: 1/1] 127.0.0.1 () {42 vars in 843 bytes} [Tue Aug 13 11:06:43 2019] GET /index/ => generated 27 bytes in 641 msecs (HTTP/1.1 500) 4 headers in 126 bytes (1 switches on core 1)
+[pid: 5623|app: 0|req: 1/2] 127.0.0.1 () {42 vars in 778 bytes} [Tue Aug 13 11:06:44 2019] GET /favicon.ico => generated 77 bytes in 335 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+*** Starting uWSGI 2.0.18 (64bit) on [Tue Aug 13 11:13:02 2019] ***
+compiled with version: 5.4.0 20160609 on 07 August 2019 06:08:08
+os: Linux-4.4.0-96-generic #119-Ubuntu SMP Tue Sep 12 14:59:54 UTC 2017
+nodename: tedu
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 2
+current working directory: /home/tarena/dailyfresh
+writing pidfile to uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/tarena/dailyfresh
+your processes number limit is 15576
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+probably another instance of uWSGI is running on the same address (127.0.0.1:8000).
+bind(): Address already in use [core/socket.c line 769]
+[pid: 5625|app: 0|req: 1/3] 127.0.0.1 () {44 vars in 874 bytes} [Tue Aug 13 11:13:08 2019] GET /index/ => generated 27 bytes in 411 msecs (HTTP/1.1 500) 4 headers in 126 bytes (1 switches on core 0)
+[pid: 5622|app: 0|req: 1/4] 127.0.0.1 () {44 vars in 874 bytes} [Tue Aug 13 11:13:12 2019] GET /index/ => generated 27 bytes in 451 msecs (HTTP/1.1 500) 4 headers in 126 bytes (1 switches on core 0)
+*** Starting uWSGI 2.0.18 (64bit) on [Tue Aug 13 11:22:57 2019] ***
+compiled with version: 5.4.0 20160609 on 07 August 2019 06:08:08
+os: Linux-4.4.0-96-generic #119-Ubuntu SMP Tue Sep 12 14:59:54 UTC 2017
+nodename: tedu
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 2
+current working directory: /home/tarena/dailyfresh
+writing pidfile to uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/tarena/dailyfresh
+your processes number limit is 15576
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+probably another instance of uWSGI is running on the same address (127.0.0.1:8000).
+bind(): Address already in use [core/socket.c line 769]
+[pid: 5623|app: 0|req: 2/5] 127.0.0.1 () {44 vars in 874 bytes} [Tue Aug 13 11:23:05 2019] GET /index/ => generated 27 bytes in 105 msecs (HTTP/1.1 500) 4 headers in 126 bytes (1 switches on core 0)
+[pid: 5622|app: 0|req: 2/6] 127.0.0.1 () {44 vars in 862 bytes} [Tue Aug 13 11:26:44 2019] GET / => generated 77 bytes in 3 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 5625|app: 0|req: 2/7] 127.0.0.1 () {42 vars in 843 bytes} [Tue Aug 13 11:26:47 2019] GET /index/ => generated 27 bytes in 47 msecs (HTTP/1.1 500) 4 headers in 126 bytes (1 switches on core 1)
+*** Starting uWSGI 2.0.18 (64bit) on [Tue Aug 13 11:27:24 2019] ***
+compiled with version: 5.4.0 20160609 on 07 August 2019 06:08:08
+os: Linux-4.4.0-96-generic #119-Ubuntu SMP Tue Sep 12 14:59:54 UTC 2017
+nodename: tedu
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 2
+current working directory: /home/tarena/dailyfresh
+writing pidfile to uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/tarena/dailyfresh
+your processes number limit is 15576
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+probably another instance of uWSGI is running on the same address (127.0.0.1:8000).
+bind(): Address already in use [core/socket.c line 769]
+[pid: 5625|app: 0|req: 3/8] 127.0.0.1 () {44 vars in 874 bytes} [Tue Aug 13 11:27:30 2019] GET /index/ => generated 27 bytes in 45 msecs (HTTP/1.1 500) 4 headers in 126 bytes (1 switches on core 0)
+[pid: 5622|app: 0|req: 3/9] 127.0.0.1 () {44 vars in 874 bytes} [Tue Aug 13 11:31:34 2019] GET /index/ => generated 27 bytes in 55 msecs (HTTP/1.1 500) 4 headers in 126 bytes (1 switches on core 0)
+[pid: 5625|app: 0|req: 4/10] 127.0.0.1 () {42 vars in 831 bytes} [Tue Aug 13 11:31:41 2019] GET / => generated 77 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 5622|app: 0|req: 4/11] 127.0.0.1 () {42 vars in 843 bytes} [Tue Aug 13 11:31:50 2019] GET /index/ => generated 27 bytes in 44 msecs (HTTP/1.1 500) 4 headers in 126 bytes (1 switches on core 1)
+[pid: 5624|app: 0|req: 2/12] 127.0.0.1 () {42 vars in 843 bytes} [Tue Aug 13 11:32:07 2019] GET /index/ => generated 27 bytes in 50 msecs (HTTP/1.1 500) 4 headers in 126 bytes (1 switches on core 0)
+*** Starting uWSGI 2.0.18 (64bit) on [Tue Aug 13 12:10:29 2019] ***
+compiled with version: 5.4.0 20160609 on 07 August 2019 06:08:08
+os: Linux-4.4.0-96-generic #119-Ubuntu SMP Tue Sep 12 14:59:54 UTC 2017
+nodename: tedu
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 2
+current working directory: /home/tarena/dailyfresh
+writing pidfile to uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/tarena/dailyfresh
+your processes number limit is 15576
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8000 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.5.2 (default, Nov 12 2018, 13:43:14)  [GCC 5.4.0 20160609]
+Python main interpreter initialized at 0x2241810
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416880 bytes (407 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x2241810 pid: 7445 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 7445)
+spawned uWSGI worker 1 (pid: 7447, cores: 2)
+spawned uWSGI worker 2 (pid: 7448, cores: 2)
+spawned uWSGI worker 3 (pid: 7449, cores: 2)
+spawned uWSGI worker 4 (pid: 7451, cores: 2)
+[pid: 7448|app: 0|req: 1/1] 127.0.0.1 () {44 vars in 874 bytes} [Tue Aug 13 12:10:37 2019] GET /index/ => generated 27 bytes in 464 msecs (HTTP/1.1 500) 4 headers in 126 bytes (1 switches on core 0)
+[pid: 7447|app: 0|req: 1/2] 127.0.0.1 () {44 vars in 874 bytes} [Tue Aug 13 12:24:20 2019] GET /index/ => generated 27 bytes in 459 msecs (HTTP/1.1 500) 4 headers in 126 bytes (1 switches on core 0)
+*** Starting uWSGI 2.0.18 (64bit) on [Tue Aug 13 12:29:50 2019] ***
+compiled with version: 5.4.0 20160609 on 07 August 2019 06:08:08
+os: Linux-4.4.0-96-generic #119-Ubuntu SMP Tue Sep 12 14:59:54 UTC 2017
+nodename: tedu
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 2
+current working directory: /home/tarena/dailyfresh
+writing pidfile to uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/tarena/dailyfresh
+your processes number limit is 15576
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+probably another instance of uWSGI is running on the same address (127.0.0.1:8000).
+bind(): Address already in use [core/socket.c line 769]
+[pid: 7447|app: 0|req: 2/3] 127.0.0.1 () {44 vars in 874 bytes} [Tue Aug 13 12:30:08 2019] GET /index/ => generated 27 bytes in 47 msecs (HTTP/1.1 500) 4 headers in 126 bytes (1 switches on core 1)
+Tue Aug 13 12:30:52 2019 - uWSGI worker 3 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Tue Aug 13 12:30:52 2019 - uWSGI worker 4 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Tue Aug 13 12:30:52 2019 - uWSGI worker 3 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+*** Starting uWSGI 2.0.18 (64bit) on [Tue Aug 13 12:31:18 2019] ***
+compiled with version: 5.4.0 20160609 on 07 August 2019 06:08:08
+os: Linux-4.4.0-96-generic #119-Ubuntu SMP Tue Sep 12 14:59:54 UTC 2017
+nodename: tedu
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 2
+current working directory: /home/tarena/dailyfresh
+writing pidfile to uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/tarena/dailyfresh
+your processes number limit is 15576
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8000 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.5.2 (default, Nov 12 2018, 13:43:14)  [GCC 5.4.0 20160609]
+Python main interpreter initialized at 0x2443810
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416880 bytes (407 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x2443810 pid: 7674 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 7674)
+spawned uWSGI worker 1 (pid: 7676, cores: 2)
+spawned uWSGI worker 2 (pid: 7677, cores: 2)
+spawned uWSGI worker 3 (pid: 7678, cores: 2)
+spawned uWSGI worker 4 (pid: 7680, cores: 2)
+[pid: 7678|app: 0|req: 1/1] 127.0.0.1 () {44 vars in 874 bytes} [Tue Aug 13 12:31:28 2019] GET /index/ => generated 27 bytes in 441 msecs (HTTP/1.1 500) 4 headers in 126 bytes (1 switches on core 0)
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.18 (64bit) on [Tue Aug 13 12:44:55 2019] ***
+compiled with version: 5.4.0 20160609 on 07 August 2019 06:08:08
+os: Linux-4.4.0-96-generic #119-Ubuntu SMP Tue Sep 12 14:59:54 UTC 2017
+nodename: tedu
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 2
+current working directory: /home/tarena/dailyfresh
+writing pidfile to uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/tarena/dailyfresh
+your processes number limit is 15576
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8000 fd 3
+Python version: 3.5.2 (default, Nov 12 2018, 13:43:14)  [GCC 5.4.0 20160609]
+Python main interpreter initialized at 0xd40630
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416880 bytes (407 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0xd40630 pid: 7976 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 7976)
+spawned uWSGI worker 1 (pid: 7978, cores: 2)
+spawned uWSGI worker 2 (pid: 7979, cores: 2)
+spawned uWSGI worker 3 (pid: 7980, cores: 2)
+spawned uWSGI worker 4 (pid: 7982, cores: 2)
+[pid: 7980|app: 0|req: 1/1] 127.0.0.1 () {42 vars in 843 bytes} [Tue Aug 13 12:45:01 2019] GET /index/ => generated 27 bytes in 473 msecs (HTTP/1.1 500) 4 headers in 126 bytes (1 switches on core 1)
+[pid: 7978|app: 0|req: 1/2] 127.0.0.1 () {42 vars in 778 bytes} [Tue Aug 13 12:45:02 2019] GET /favicon.ico => generated 77 bytes in 331 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.18 (64bit) on [Tue Aug 13 13:00:59 2019] ***
+compiled with version: 5.4.0 20160609 on 07 August 2019 06:08:08
+os: Linux-4.4.0-96-generic #119-Ubuntu SMP Tue Sep 12 14:59:54 UTC 2017
+nodename: tedu
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 2
+current working directory: /home/tarena/dailyfresh
+writing pidfile to uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/tarena/dailyfresh
+your processes number limit is 15576
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8000 fd 3
+Python version: 3.5.2 (default, Nov 12 2018, 13:43:14)  [GCC 5.4.0 20160609]
+Python main interpreter initialized at 0x1bc2630
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416880 bytes (407 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x1bc2630 pid: 8382 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 8382)
+spawned uWSGI worker 1 (pid: 8384, cores: 2)
+spawned uWSGI worker 2 (pid: 8385, cores: 2)
+spawned uWSGI worker 3 (pid: 8386, cores: 2)
+spawned uWSGI worker 4 (pid: 8388, cores: 2)
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.18 (64bit) on [Tue Aug 13 13:16:02 2019] ***
+compiled with version: 5.4.0 20160609 on 07 August 2019 06:08:08
+os: Linux-4.4.0-96-generic #119-Ubuntu SMP Tue Sep 12 14:59:54 UTC 2017
+nodename: tedu
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 2
+current working directory: /home/tarena/dailyfresh
+writing pidfile to uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/tarena/dailyfresh
+your processes number limit is 15576
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8000 fd 3
+Python version: 3.5.2 (default, Nov 12 2018, 13:43:14)  [GCC 5.4.0 20160609]
+Python main interpreter initialized at 0x2735630
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416880 bytes (407 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x2735630 pid: 8791 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 8791)
+spawned uWSGI worker 1 (pid: 8793, cores: 2)
+spawned uWSGI worker 2 (pid: 8794, cores: 2)
+spawned uWSGI worker 3 (pid: 8795, cores: 2)
+spawned uWSGI worker 4 (pid: 8797, cores: 2)
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+[pid: 8797|app: 0|req: 1/1] 127.0.0.1 () {42 vars in 843 bytes} [Tue Aug 13 13:16:15 2019] GET /index/ => generated 2998 bytes in 392 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 0)
